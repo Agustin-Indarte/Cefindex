@@ -4,7 +4,7 @@
 }
 
 .Title-Page {
-    font-size: clamp(2rem, 15vw, 10rem);
+    font-size: clamp(2rem, 18vw, 10rem);
     animation: floatTitle 4s ease-in-out infinite;
 }
 

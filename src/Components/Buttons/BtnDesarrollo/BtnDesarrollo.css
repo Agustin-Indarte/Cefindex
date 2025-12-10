@@ -6,7 +6,7 @@
   border: .25em solid var(--glow-color);
   padding: 1.5em 3em;
   color: white;
-  font-size: 1rem;
+  font-size: clamp(0.5rem, 2.5vw, 1rem);
   font-weight: bold;
   background-color: var(--btn-color);
   border-radius: 1em;
@@ -18,7 +18,7 @@
   text-shadow: 0 0 .5em var(--glow-color);
   position: relative;
   transition: all 0.3s;
-  margin-top: 1.5rem;
+
 }
 
 .button-id::after {

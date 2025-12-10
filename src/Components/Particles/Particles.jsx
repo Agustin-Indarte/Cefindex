@@ -117,9 +117,145 @@ const particlesConfig =
 
 const Particles = () => {
   useEffect(() => {
-    if (window.particlesJS) {
-      window.particlesJS("particles-js", particlesConfig);
-    }
+    const computeSizes = () => {
+      const width = window.innerWidth;
+      const size = Math.max(40, Math.min(200, Math.round(width * 0.12))); // tamaño principal
+      const sizeMin = Math.max(20, Math.round(size * 0.25)); // tamaño mínimo en animación
+      return { size, sizeMin };
+    };
+
+    const initParticles = () => {
+      if (!window.particlesJS) return;
+      const { size, sizeMin } = computeSizes();
+
+      const cfg = {
+        "particles": {
+          "number": {
+            "value": 10,
+            "density": {
+              "enable": true,
+              "value_area": 800
+            }
+          },
+          "color": {
+            "value": "#a020f0" //Color de las particulas
+          },
+          "shape": {
+            "type": "polygon",
+            "stroke": {
+              "width": 0,
+              "color": "#000"
+            },
+            "polygon": {
+              "nb_sides": 6
+            },
+            "image": {
+              "src": "img/github.svg",
+              "width": 100,
+              "height": 100
+            }
+          },
+          "opacity": {
+            "value": 0.3,
+            "random": true,
+            "anim": {
+              "enable": false,
+              "speed": 1,
+              "opacity_min": 0.1,
+              "sync": false
+            }
+          },
+          "size": {
+            "value": size,
+            "random": false,
+            "anim": {
+              "enable": true,
+              "speed": 10,
+              "size_min": sizeMin,
+              "sync": false
+            }
+          },
+          "line_linked": {
+            "enable": false,
+            "distance": 200,
+            "color": "#ffffff",
+            "opacity": 1,
+            "width": 2
+          },
+          "move": {
+            "enable": true,
+            "speed": 8,
+            "direction": "none",
+            "random": false,
+            "straight": false,
+            "out_mode": "out",
+            "bounce": false,
+            "attract": {
+              "enable": false,
+              "rotateX": 600,
+              "rotateY": 1200
+            }
+          }
+        },
+        "interactivity": {
+          "detect_on": "canvas",
+          "events": {
+            "onhover": {
+              "enable": true,
+              "mode": "repulse"
+            },
+            "onclick": {
+              "enable": true,
+              "mode": "push"
+            },
+            "resize": true
+          },
+          "modes": {
+            "grab": {
+              "distance": 400,
+              "line_linked": {
+                "opacity": 1
+              }
+            },
+            "bubble": {
+              "distance": 400,
+              "size": 40,
+              "duration": 2,
+              "opacity": 8,
+              "speed": 3
+            },
+            "repulse": {
+              "distance": 200,
+              "duration": 0.4
+            },
+            "push": {
+              "particles_nb": 4
+            },
+            "remove": {
+              "particles_nb": 2
+            }
+          }
+        },
+        "retina_detect": true
+      };
+
+      window.particlesJS("particles-js", cfg);
+    };
+
+    initParticles();
+
+    let rAF;
+    const onResize = () => {
+      cancelAnimationFrame(rAF);
+      rAF = requestAnimationFrame(() => {
+        initParticles();
+      });
+    };
+
+    window.addEventListener('resize', onResize);
+    return () => {
+      window.removeEventListener('resize', onResize);
+    };
   }, []);
 
  return (

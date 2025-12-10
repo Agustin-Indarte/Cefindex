@@ -14,7 +14,7 @@ function Hero() {
                     <h1 className='Title-Page floating fw-bolder text-white mb-0'>Cefindex</h1>
                 </div>
 
-                <div data-aos="zoom-in" /* data-aos-delay="200" */ data-aos-duration="600">
+                <div  data-aos="zoom-in"  /* data-aos-delay="200" */ data-aos-duration="600">
                     <SubtitleAnimated />
                 </div>
 

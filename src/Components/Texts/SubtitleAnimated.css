@@ -1,42 +1,41 @@
-
 .title {
-  margin: 0;
-  height: auto;
-  background: transparent;
-  padding: 0;
-  position: relative;
-  width: max-content;
-  white-space: nowrap;
+    height: auto;
+    background: transparent;
+    position: relative;
+    width: max-content;
+    white-space: nowrap;
 
-  margin-left: 2.5rem;
-  --border-right: 6px;
-  --text-stroke-color: rgba(255, 255, 255, 0.76);
-  --animation-color: #ffffffff;
-  --fs-size: 2em;
+    --border-right: 6px;
+    --text-stroke-color: rgba(255, 255, 255, 0.76);
+    --animation-color: #ffffffff;
+    --fs-size: clamp(0.7rem, 3.5vw, 2rem);
+    margin-left: clamp(0.7rem, 3.5vw, 2rem);
 
-  text-decoration: none;
-  font-size: var(--fs-size);
-  font-weight: bold;
-  color: transparent;
-  -webkit-text-stroke: 1px var(--text-stroke-color);
-  white-space: nowrap;
+    margin-top: clamp(0.7rem, 3.5vw, 1rem);
+    margin-bottom: clamp(2rem, 3.5vw, 2rem);
+    text-decoration: none;
+    font-size: var(--fs-size);
+    font-weight: bold;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+    white-space: nowrap;
 }
 
 .title .hover-text {
-  position: absolute;
-  box-sizing: border-box;
-  content: attr(data-text);
-  color: var(--animation-color);
-  width: 0%;
-  inset: 0;
-  border-right: var(--border-right) solid var(--animation-color);
-  overflow: hidden;
-  transition: 0.5s;
-  -webkit-text-stroke: 1px var(--animation-color);
-  white-space: nowrap;
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--animation-color);
+    width: 0%;
+    inset: 0;
+    border-right: var(--border-right) solid var(--animation-color);
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-text-stroke: 1px var(--animation-color);
+    white-space: nowrap;
 }
 
 .title:hover .hover-text {
-  width: 100%;
-  filter: drop-shadow(0 0 23px var(--animation-color));
+    width: 100%;
+    filter: drop-shadow(0 0 23px var(--animation-color));
 }
