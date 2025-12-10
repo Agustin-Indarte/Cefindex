@@ -270,6 +270,7 @@ const Particles = () => {
         zIndex: -1,
         pointerEvents: 'none',
         background: 'linear-gradient(to bottom, #000000 0%, rgb(var(--color-background)) 40%, rgb(var(--color-surface)) 100%)',
+      
       }}
     />
   );

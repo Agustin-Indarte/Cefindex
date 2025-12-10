@@ -1,0 +1,22 @@
+.Service-Section{
+  min-height: 100vh;
+  width: 100%;
+    background: var(--colorNegro);
+}
+
+.Text-Section{
+   margin-top: clamp(1rem, 5vw, 3rem);
+}
+
+.Title-Section {
+    font-size: clamp(2rem, 10vw, 3rem);
+    color: var(--colorCefindex);
+    font-weight: bolder;
+}
+
+.Description-Section {
+    font-size: clamp(1rem, 10vw, 1.5rem);
+    color: var(--colorGris);
+   /*  text-shadow: 0 0 8px rgba(255, 255, 255, 0.7), 0 0 15px rgba(255, 255, 255, 0.4); */
+}
+

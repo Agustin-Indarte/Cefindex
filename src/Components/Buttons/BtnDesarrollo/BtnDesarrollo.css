@@ -1,52 +1,75 @@
 .button-id {
-  --glow-color: rgb(217, 176, 255);
-  --glow-spread-color: rgba(191, 123, 255, 0.781);
-  --enhanced-glow-color: rgb(231, 206, 255);
-  --btn-color: rgba(100, 61, 136, 0.58);
-  border: .25em solid var(--glow-color);
-  padding: 1.5em 3em;
-  color: white;
-  font-size: clamp(0.5rem, 2.5vw, 1rem);
-  font-weight: bold;
-  background-color: var(--btn-color);
-  border-radius: 1em;
-  outline: none;
-  box-shadow:
-    0 0 1em .25em var(--glow-color),
-    0 0 4em 1em var(--glow-spread-color),
-    inset 0 0 .75em .25em var(--glow-color);
-  text-shadow: 0 0 .5em var(--glow-color);
-  position: relative;
-  transition: all 0.3s;
+  /* Variables de color para el brillo y el fondo del botón */
+  --glow-color: rgb(217, 176, 255);                /* Color principal del brillo */
+  --glow-spread-color: rgba(191, 123, 255, 0.781); /* Brillo extendido para sombras más suaves */
+  --enhanced-glow-color: rgb(231, 206, 255);       /* Brillo intensificado (no usado directo) */
+  --btn-color: rgba(100, 61, 136, 0.58);           /* Color de fondo del botón */
 
+  /* Borde con color de brillo */
+  border: .25em solid var(--glow-color);
+
+  /* Espaciado interno del botón */
+  padding: 1.5em 3em;
+
+  /* Texto */
+  color: white;
+  font-size: clamp(0.5rem, 2.5vw, 1rem);           /* Tamaño responsive del texto */
+  font-weight: bold;
+
+  /* Fondo del botón */
+  background-color: var(--btn-color);
+
+  /* Forma del botón */
+  border-radius: 1em;
+
+  /* Quitar el contorno por defecto al enfocar */
+  outline: none;
+
+  /* Sombras para efecto glow tanto externo como interno */
+  box-shadow:
+    0 0 1em .25em var(--glow-color),               /* Halo cercano */
+    0 0 4em 1em var(--glow-spread-color),          /* Halo extendido */
+    inset 0 0 .75em .25em var(--glow-color);       /* Brillo interno */
+
+  /* Sombra del texto para mayor luminosidad */
+  text-shadow: 0 0 .5em var(--glow-color);
+
+  /* Posicionamiento para pseudo-elemento ::after */
+  position: relative;
+
+  /* Transiciones suaves en hover/active */
+  transition: all 0.3s;
 }
 
+/* Brillo proyectado debajo del botón para efecto de neón en el fondo */
 .button-id::after {
-  pointer-events: none;
+  pointer-events: none;                             /* Evitar interacción con el pseudo-elemento */
   content: "";
   position: absolute;
-  top: 120%;
+  top: 120%;                                        /* Posicionar debajo del botón */
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: var(--glow-spread-color);
-  filter: blur(2em);
-  opacity: .7;
-  transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+  background-color: var(--glow-spread-color);       /* Color del brillo proyectado */
+  filter: blur(2em);                                /* Difuminar para suavizar el glow */
+  opacity: .7;                                      /* Intensidad del brillo */
+  transform: perspective(1.5em) rotateX(35deg) scale(1, .6); /* Efecto de proyección 3D */
 }
 
+/* Estado hover: intensificar el brillo */
 .button-id:hover {
   color: white;
   background-color: var(--btn-color);
   box-shadow:
     0 0 1em .25em var(--glow-color),
-    0 0 4em 2em var(--glow-spread-color),
+    0 0 4em 2em var(--glow-spread-color),           /* Aumentar glow extendido */
     inset 0 0 .75em .25em var(--glow-color);
 }
 
+/* Estado active (clic): reducir ligeramente el brillo para efecto de pulsación */
 .button-id:active {
   box-shadow:
-    0 0 0.6em .25em var(--glow-color),
+    0 0 0.6em .25em var(--glow-color),              /* Halo más pequeño */
     0 0 2.5em 2em var(--glow-spread-color),
     inset 0 0 .5em .25em var(--glow-color);
 }

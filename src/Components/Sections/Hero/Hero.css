@@ -1,6 +1,8 @@
 .Hero-Section{
   min-height: 100vh; /* equivalente a min-h-screen */
   width: 100%;
+     background: linear-gradient(to top, #0f0f0f 30%, rgba(15,15,15,0) 100%);
+
 }
 
 .Title-Page {
