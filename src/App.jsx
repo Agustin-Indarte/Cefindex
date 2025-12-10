@@ -4,7 +4,6 @@ import { Home } from './Page'
 
 
 function App() {
-
   return (
     
     <>
