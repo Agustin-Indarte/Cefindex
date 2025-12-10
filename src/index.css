@@ -15,7 +15,14 @@
     --colorBlanco: #fdfdfd;
     --colorNegro: #0f0f0f;
     --colorGris: #D9D9D9;
+      --color-primary: 147 51 234;
+    --color-primary-dark: 126 34 206;
+    --color-accent: 168 85 247;
+    --color-background: 10 10 15;
+    --color-surface: 20 20 30;
 }
+
+
 
 /* SCROLL */
 ::-webkit-scrollbar {
