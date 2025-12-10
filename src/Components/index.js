@@ -1,0 +1,4 @@
+export {default as Hero} from './Sections/Hero/Hero'
+export {default as Proceso} from './Sections/Proceso/Proceso'
+export {default as Service} from './Sections/Service/Service'
+export {default as Banner} from './Sections/Banner/Banner'
