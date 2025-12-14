@@ -1,6 +1,7 @@
 import { Row, Col } from 'react-bootstrap'
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import './Análisis.css'
+import BtnVerMás from '../../Buttons/BtnVerMás/BtnVerMás';
 
 function Análisis() {
   return (
@@ -21,6 +22,7 @@ function Análisis() {
           <p className='analisis-text text-white'>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam nam quasi beatae. Magnam molestias voluptatibus nemo, cumque magni et commodi earum eligendi accusamus.
           </p>
+          <BtnVerMás />
         </Col>
       </Row>
     </section>
