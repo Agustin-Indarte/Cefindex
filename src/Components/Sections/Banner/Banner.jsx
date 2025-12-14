@@ -1,5 +1,6 @@
 import React from 'react'
 import './Banner.css'
+import ButtonCA from '../../Buttons/ButtonCA/ButtonCA'
 
 function Banner() {
   return (
@@ -16,6 +17,7 @@ function Banner() {
         <div className="banner-content">
 
           <h3 className='floating mb-3'>NUESTRO PROCESO DE TRABAJO</h3>
+          <ButtonCA />
         </div>
       </div>
     </section>

@@ -1,0 +1,23 @@
+.btn-contact {
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 500;
+  color: white;
+  text-shadow: none;
+  background: rgba(255, 255, 255, 0.253);
+  cursor: pointer;
+  box-shadow: transparent;
+  border: 1px solid #ffffff80;
+  transition: 0.5s ease;
+  user-select: none;
+}
+
+.btn-contact:hover,
+.btn-contact:focus {
+  color: #ffffff;
+  background: var(--colorCefindex);
+  border: 1px solid var(--colorCefindex);
+  box-shadow: 0 0 5px var(--colorCefindex), 0 0 20px var(--colorCefindex), 0 0 50px var(--colorCefindex),
+    0 0 100px var(--colorCefindex);
+}
