@@ -16,7 +16,7 @@ function Banner() {
         />
         <div className="banner-content">
 
-          <h3 className='floating mb-3'>NUESTRO PROCESO DE TRABAJO</h3>
+          <h3 className='floating mb-3 text-banner'>NUESTRO PROCESO DE TRABAJO</h3>
           <ButtonCA />
         </div>
       </div>

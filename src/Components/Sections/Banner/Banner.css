@@ -8,6 +8,11 @@
     align-items: center;
 }
 
+.text-banner{
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+    font-weight: bolder;
+}
+
 .banner-video {
   position: absolute;
   top: 0;
