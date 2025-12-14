@@ -10,9 +10,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@lottiefiles/dotlottie-react": "^0.17.10",
     "aos": "^2.3.4",
     "bootstrap": "^5.3.8",
+    "install": "^0.13.0",
     "motion": "^12.23.25",
+    "npm": "^11.7.0",
     "react": "^19.2.0",
     "react-bootstrap": "^2.10.10",
     "react-dom": "^19.2.0"

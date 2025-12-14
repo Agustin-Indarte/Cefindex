@@ -1,5 +1,5 @@
 import {useEffect} from 'react'
-import { Banner, Hero, Service } from '../../Components'
+import { Análisis, Banner, Hero, Service } from '../../Components'
 import 'aos/dist/aos.css'
 import AOS from 'aos'
 
@@ -16,6 +16,7 @@ function Home() {
       <Hero />
       <Service />
       <Banner />
+      <Análisis />
     </div>
   )
 }

@@ -1,7 +1,7 @@
 .btn-contact {
   padding: 10px 20px;
   border-radius: 8px;
-   font-size: clamp(1rem, 5vw, 2rem);
+   font-size: clamp(1rem, 5vw, 1.5rem);
   font-weight: 500;
   color: white;
   text-shadow: none;

@@ -1,0 +1,43 @@
+.Análisis-Section{
+  min-height: 100vh;
+  width: 100%;
+  background: var(--colorNegro);
+  position: relative;
+  overflow: hidden;
+}
+
+.Análisis-Section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px; 
+  pointer-events: none;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.6) 0%,
+    rgba(0, 0, 0, 0.35) 40%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  z-index: 1;
+}
+.lottie-analisis {
+  width: 100%;
+  height: 70%; 
+
+}
+
+/* textos más grandes y fluidos */
+.analisis-title {
+  font-size: clamp(2rem, 3.2vw, 3rem);
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+
+.analisis-text {
+  width: 85%;
+  font-size: clamp(1rem, 1.4vw, 1.25rem);
+  line-height: 1.6;
+}
+
