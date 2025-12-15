@@ -10,7 +10,7 @@ function Análisis() {
 
         {/* CONTENEDOR LOTTIE */}
         <Col md={6} className="analisis-lottie">
-          <div className="lottie-wrapper">
+          <div className="lottie-analisis-wrapper">
             <DotLottieReact
               className="lottie-analisis"
               src="https://lottie.host/067270ec-dc43-4672-a87b-8d3180e5fee8/CPDGbcRch3.lottie"

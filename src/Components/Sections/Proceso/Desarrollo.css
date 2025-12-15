@@ -1,0 +1,153 @@
+/* =============================
+   SECCIÓN GENERAL
+============================= */
+
+.Desarrollo-Section {
+  min-height: 100vh;
+  background: var(--colorGris);
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+/* =============================
+   LAYOUT BASE
+============================= */
+
+.desarrollo-row {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* =============================
+   CONTENEDOR LOTTIE
+============================= */
+
+.desarrollo-lottie {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.55)); /* sombra blanca */
+}
+
+/* Este es el contenedor REAL que mide el layout */
+.lottie-desarrollo-wrapper {
+  position: relative;
+   height:50vh;
+    width: 100vw;
+  overflow: visible;  /* deja sobresalir el lottie */
+}
+
+
+/* El lottie ya no define el layout */
+.lottie-desarrollo {
+  position: absolute;
+  inset: -20% -30%;
+  width: 160%;
+  height: 140%;
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.55)); /* sombra negra */
+}
+
+/* =============================
+   CONTENIDO
+============================= */
+
+.desarrollo-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.desarrollo-title {
+  font-size: clamp(2rem, 10vw, 4rem);
+  margin-bottom: 1rem;
+}
+
+.desarrollo-text {
+  width: 85%;
+  font-size: clamp(1rem, 3.5vw, 2rem);
+  line-height: 2;
+}
+
+/* =============================
+   MOBILE
+============================= */
+
+@media (max-width: 767px) {
+
+  .desarrollo-row {
+    flex-direction: column;
+     align-items: center;
+    justify-content: center;
+    padding: 2rem 1.5rem;
+  }
+
+  
+
+  .lottie-desarrollo {
+    inset: -10% -50%;  /* reduce overflow para evitar tapar texto */
+    width: 200%;
+    height: 120%;
+    filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.5)); /* sombra ajustada en mobile */
+  }
+
+
+  /* Ajuste del contenedor solo en mobile */
+  .lottie-desarrollo-wrapper {
+    height: 30vh;
+    width: 100vw;
+    margin-bottom: 5rem;
+  }
+
+  .desarrollo-content {
+    align-items: center;
+    text-align: center;
+    
+  }
+
+  .desarrollo-text {
+    width: 100%;
+  }
+}
+
+/* =============================
+   TABLET (768px a 1024px)
+============================= */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+   .desarrollo-row {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1.5rem;
+  }
+
+  
+
+  .lottie-desarrollo {
+    inset: -10% -50%;  /* reduce overflow para evitar tapar texto */
+    width: 200%;
+    height: 120%;
+    filter: drop-shadow(0 14px 28px rgba(0, 0, 0, 0.5)); /* sombra ajustada en tablet */
+  }
+
+
+  /* Ajuste del contenedor solo en mobile */
+  .lottie-desarrollo-wrapper {
+    height: 40vh;
+    width: 100vw;
+    margin-bottom: 5rem;
+  }
+
+  .desarrollo-content {
+    align-items: center;
+    text-align: center;
+    
+  }
+
+  .desarrollo-text {
+    width: 200%;
+  }
+}

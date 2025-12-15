@@ -28,10 +28,11 @@
   justify-content: center;
   align-items: center;
   position: relative;
+  filter: drop-shadow(0 16px 32px rgba(255, 255, 255, 0.55)); /* sombra blanca */
 }
 
 /* Este es el contenedor REAL que mide el layout */
-.lottie-wrapper {
+.lottie-analisis-wrapper {
   position: relative;
    height:50vh;
     width: 100vw;
@@ -59,14 +60,14 @@
 }
 
 .analisis-title {
-  font-size: clamp(2rem, 5vw, 4rem);
+  font-size: clamp(2rem, 10vw, 4rem);
   margin-bottom: 1rem;
 }
 
 .analisis-text {
   width: 85%;
-  font-size: clamp(1rem, 1.4vw, 1.25rem);
-  line-height: 1.6;
+  font-size: clamp(1rem, 3.5vw, 2rem);
+  line-height: 2;
 }
 
 /* =============================
@@ -77,6 +78,7 @@
 
   .analisis-row {
     flex-direction: column;
+     align-items: center;
     justify-content: center;
     padding: 2rem 1.5rem;
   }
@@ -84,17 +86,18 @@
   
 
   .lottie-analisis {
-    inset: -10% -50%;  /* reduce overflow para evitar tapar texto */
-    width: 200%;
+    inset: -10% -40%;  /* reduce overflow para evitar tapar texto */
+    width: 190%;
     height: 120%;
+        filter: drop-shadow(0 12px 24px rgba(255, 255, 255, 0.5)); /* sombra ajustada en mobile */
   }
 
 
   /* Ajuste del contenedor solo en mobile */
-  .lottie-wrapper {
+  .lottie-analisis-wrapper {
     height: 40vh;
     width: 100vw;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
   }
 
   .analisis-content {
@@ -113,27 +116,37 @@
 ============================= */
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  .analisis-row {
-    min-height: 100vh; /* mantiene altura de sección en tablet */
+ .analisis-row {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1.5rem;
   }
 
-  .lottie-wrapper {
-    height: 40vh;      /* tamaño intermedio para tablet */
-    width: 100%;
-  }
+  
 
   .lottie-analisis {
-    inset: -10% -50%;  /* reduce overflow para evitar tapar texto */
-    width: 200%;
+    inset: -10% -30%;  /* reduce overflow para evitar tapar texto */
+    width: 150%;
     height: 120%;
+    filter: drop-shadow(0 14px 28px rgba(0, 0, 0, 0.5)); /* sombra ajustada en tablet */
+  }
+
+
+  /* Ajuste del contenedor solo en mobile */
+  .lottie-analisis-wrapper {
+    height: 40vh;
+    width: 100vw;
+    margin-bottom: 5rem;
   }
 
   .analisis-content {
-    align-items: flex-start; /* mantiene texto a la izquierda en tablet */
-    text-align: left;
+    align-items: center;
+    text-align: center;
+    
   }
 
   .analisis-text {
-    width: 90%; /* un poco más ancho para mejor lectura */
+    width: 200%;
   }
 }
