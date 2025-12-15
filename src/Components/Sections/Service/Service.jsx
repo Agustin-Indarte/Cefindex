@@ -7,7 +7,7 @@ function Service() {
      
         <article className='Text-Section d-flex flex-column justify-content-center align-items-center text-center'>
           <h2 className='Title-Section floating'>NUESTROS SERVICIOS</h2>
-          <p className='Description-Section my-3'>
+          <p className='Description-Section my-3 w-75'>
             Desarrollamos herramientas digitales a medida, creadas según las necesidades y objetivos de cada cliente, orientadas a optimizar procesos, mejorar la experiencia de uso y potenciar los resultados de cualquier proyecto o empresa.
           </p>
         </article>

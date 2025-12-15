@@ -9,14 +9,14 @@
 }
 
 .Title-Section {
-    font-size: clamp(2rem, 10vw, 3rem);
+    font-size: clamp(1.7rem, 5vw, 3rem);
     color: var(--colorCefindex);
     font-weight: bolder;
 }
 
 .Description-Section {
-    font-size: clamp(1rem, 10vw, 1.5rem);
+    font-size: clamp(0.5rem, 4vw, 1.5rem);
     color: var(--colorGris);
-   /*  text-shadow: 0 0 8px rgba(255, 255, 255, 0.7), 0 0 15px rgba(255, 255, 255, 0.4); */
+    text-align: start;
 }
 
