@@ -63,12 +63,15 @@
 .desarrollo-title {
   font-size: clamp(2rem, 10vw, 4rem);
   margin-bottom: 1rem;
+   text-shadow: 0 0 8px rgba(82, 82, 82, 0.7), 0 0 15px rgba(255, 255, 255, 0.4);
 }
 
 .desarrollo-text {
   width: 85%;
   font-size: clamp(1rem, 3.5vw, 2rem);
   line-height: 1.7;
+   color: rgba(27, 27, 27, 0.788);
+
 }
 
 /* =============================
@@ -76,7 +79,7 @@
 ============================= */
 @media (max-width: 480px) {
   .desarrollo-row {
-     background-color: red;
+
     flex-direction: column;
     align-items: center;
     justify-content: center;

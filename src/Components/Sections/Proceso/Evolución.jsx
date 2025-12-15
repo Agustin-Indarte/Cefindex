@@ -26,7 +26,7 @@ function Evolución() {
             EVOLUCIÓN
           </h3>
 
-          <p className="evolución-text text-white">
+          <p className="evolución-text ">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
             Quisquam nam quasi beatae. Magnam molestias voluptatibus nemo,
             cumque magni et commodi earum eligendi accusamus.

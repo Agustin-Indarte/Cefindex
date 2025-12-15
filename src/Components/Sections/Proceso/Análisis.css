@@ -62,12 +62,15 @@
 .analisis-title {
   font-size: clamp(2rem, 10vw, 4rem);
   margin-bottom: 1rem;
+   text-shadow: 0 0 8px rgba(255, 255, 255, 0.7), 0 0 15px rgba(255, 255, 255, 0.4);
 }
+
 
 .analisis-text {
   width: 85%;
   font-size: clamp(1rem, 3.5vw, 2rem);
   line-height: 1.7;
+      color: rgba(228, 228, 228, 0.788);
 }
 
 /* =============================
