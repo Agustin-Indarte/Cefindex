@@ -10,7 +10,7 @@ function Desarrollo() {
 
         {/* CONTENEDOR LOTTIE */}
         <Col md={6} className="desarrollo-lottie">
-          <div className="lottie-desarrollo-wrapper">
+          <div className="lottie-desarrollo-wrapper" data-aos="fade-down" data-aos-duration="1000">
             <DotLottieReact
               className="lottie-desarrollo"
          src="https://lottie.host/c0d6af31-3268-4b97-9ca3-0255cdfef0d0/8MNiyntyT6.lottie"
@@ -22,7 +22,8 @@ function Desarrollo() {
 
         {/* CONTENIDO */}
         <Col md={6} className="desarrollo-content">
-          <h3 className="desarrollo-title  fw-bolder">
+        <div  data-aos="fade-down" data-aos-duration="1000">
+<h3 className="desarrollo-title  fw-bolder">
             DESARROLLO
           </h3>
 
@@ -33,6 +34,8 @@ function Desarrollo() {
           </p>
 
           <BtnVerMás />
+        </div>
+          
         </Col>
 
       </Row>

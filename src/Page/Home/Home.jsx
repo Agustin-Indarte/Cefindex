@@ -7,9 +7,10 @@ function Home() {
   useEffect(() => {
     AOS.init({
       easing: 'ease-out',
-      once: true,
+      once: false,
       offset: 0,
     })
+    AOS.refresh();
   }, [])
   return (
     <div>

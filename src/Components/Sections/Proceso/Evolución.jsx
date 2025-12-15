@@ -9,7 +9,7 @@ function Evolución() {
 
         {/* CONTENEDOR LOTTIE */}
         <Col md={6} className="evolución-lottie">
-          <div className="lottie-evolución-wrapper">
+          <div className="lottie-evolución-wrapper" data-aos="fade-down" data-aos-duration="1000">
             <DotLottieReact
               className="lottie-evolución"
          src="https://lottie.host/861f0347-6f7b-4245-b97f-57d665032da9/TFGMthgQvR.lottie"
@@ -21,6 +21,7 @@ function Evolución() {
 
         {/* CONTENIDO */}
         <Col md={6} className="evolución-content">
+         <div  data-aos="fade-down" data-aos-duration="1000">
           <h3 className="evolución-title text-white  fw-bolder">
             EVOLUCIÓN
           </h3>
@@ -32,6 +33,8 @@ function Evolución() {
           </p>
 
           <BtnVerMás />
+         </div>
+          
         </Col>
 
       </Row>
