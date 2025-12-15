@@ -9,6 +9,9 @@
     background-color:var(--colorNegro);
 }
 
+html, body {
+  overflow-x: hidden; /* evita scroll horizontal global */
+}
 
 :root {
     --colorCefindex: #a020f0;

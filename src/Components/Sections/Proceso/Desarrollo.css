@@ -148,7 +148,7 @@
 ============================= */
 @media (min-width: 768px) and (max-width: 1024px) {
   .desarrollo-row {
-    flex-direction: column;
+     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 2rem 1.5rem;
@@ -168,13 +168,19 @@
   }
 
   .desarrollo-content {
-    align-items: center;
-    text-align: center;
+   align-items: center;   /* centra hijos horizontalmente */
+    text-align: center;    /* centra texto */
+    /* background-color: blue; */ /* quitar debug */
+    width: 100%;
+    padding: 0 1rem;       /* un poco de respiración lateral */
   }
 
   .desarrollo-text {
-    width: 200%;
+       width: 95%;
+    margin: 2rem auto 2rem;  /* margen arriba y abajo */
   }
+
+  
 }
 
 /* =============================
@@ -205,9 +211,15 @@
   .desarrollo-content {
     align-items: center;
     text-align: center;
+    width: 100%;
+    padding: 0 1rem;
   }
 
   .desarrollo-text {
-    width: 200%;
+   width: 100%;
+    margin: 2rem auto 2rem;  /* margen arriba y abajo */
   }
-}
+
+
+  }
+

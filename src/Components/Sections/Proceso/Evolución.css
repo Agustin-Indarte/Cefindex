@@ -172,13 +172,19 @@
   }
 
   .evolución-content {
-    align-items: center;
-    text-align: center;
+   align-items: center;   /* centra hijos horizontalmente */
+    text-align: center;    /* centra texto */
+    /* background-color: blue; */ /* quitar debug */
+    width: 100%;
+    padding: 0 1rem;       /* un poco de respiración lateral */
   }
 
   .evolución-text {
-    width: 200%;
+      width: 95%;
+    margin: 2rem auto 2rem;  /* margen arriba y abajo */
   }
+
+
 }
 
 /* =============================
@@ -207,11 +213,15 @@
   }
 
   .evolución-content {
-    align-items: center;
+     align-items: center;
     text-align: center;
+    width: 100%;
+    padding: 0 1rem;
   }
 
   .evolución-text {
-    width: 200%;
+   width: 100%;
+    margin: 2rem auto 2rem;  /* margen arriba y abajo */
   }
+
 }

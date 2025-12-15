@@ -157,6 +157,7 @@
     width: 150%;
     height: 120%;
     filter: drop-shadow(0 14px 28px rgba(255, 255, 255, 0.5));
+    
   }
 
   .lottie-analisis-wrapper {
@@ -165,13 +166,18 @@
     margin-bottom: 5rem;
   }
 
+  /* Centra el contenido y el texto dentro del contenedor en tablet */
   .analisis-content {
-    align-items: center;
-    text-align: center;
+    align-items: center;   /* centra hijos horizontalmente */
+    text-align: center;    /* centra texto */
+    /* background-color: blue; */ /* quitar debug */
+    width: 100%;
+    padding: 0 1rem;       /* un poco de respiración lateral */
   }
 
   .analisis-text {
-    width: 200%;
+    width: 95%;
+    margin: 2rem auto 2rem;  /* margen arriba y abajo */
   }
 }
 
@@ -179,7 +185,7 @@
    TABLET GRANDE (1025px – 1280px)
 ============================= */
 @media (min-width: 1025px) and (max-width: 1280px) {
-  .analisis-row {
+   .analisis-row {
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -199,12 +205,15 @@
     margin-bottom: 5rem;
   }
 
-  .analisis-content {
+   .analisis-content {
     align-items: center;
     text-align: center;
+    width: 100%;
+    padding: 0 1rem;
   }
 
   .analisis-text {
-    width: 200%;
+    width: 100%;
+    margin: 2rem auto 2rem;  /* margen arriba y abajo */
   }
 }

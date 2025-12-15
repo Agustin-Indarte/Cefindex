@@ -87,28 +87,3 @@
     top: 0.85rem;
   }
 }
-
-/* Celular: hasta 480px */
-@media (max-width: 480px) {
-  .button-ver {
-    width: clamp(10rem, 85vw, 13rem);
-    height: clamp(3rem, 12vw, 3.75rem);
-    padding: clamp(0.7rem, 3.5vw, 1rem);
-    font-size: clamp(0.95rem, 4vw, 1.1rem);
-    text-underline-offset: clamp(0.4rem, 2.5vw, 0.55rem);
-  }
-
-  .button-ver::before {
-    width: clamp(2rem, 8vw, 2.75rem);
-    height: clamp(2rem, 8vw, 2.75rem);
-    right: clamp(0.4rem, 2vw, 0.8rem);
-    top: clamp(0.4rem, 2vw, 0.8rem);
-  }
-
-  .button-ver::after {
-    width: clamp(3rem, 12vw, 4.5rem);
-    height: clamp(3rem, 12vw, 4.5rem);
-    right: clamp(0.8rem, 6vw, 1.8rem);
-    top: clamp(0.5rem, 3vw, 0.8rem);
-  }
-}
