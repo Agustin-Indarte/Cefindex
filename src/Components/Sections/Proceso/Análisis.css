@@ -34,7 +34,7 @@
 /* Este es el contenedor REAL que mide el layout */
 .lottie-analisis-wrapper {
   position: relative;
-   height:50vh;
+   height:60vh;
     width: 100vw;
   overflow: visible;  /* deja sobresalir el lottie */
 }
@@ -43,8 +43,8 @@
 /* El lottie ya no define el layout */
 .lottie-analisis {
   position: absolute;
-  inset: -20% -10%;
-  width: 140%;
+  inset: -20% -30%;
+  width: 160%;
   height: 140%;
 }
 
@@ -67,7 +67,7 @@
 .analisis-text {
   width: 85%;
   font-size: clamp(1rem, 3.5vw, 2rem);
-  line-height: 2;
+  line-height: 1.7;
 }
 
 /* =============================

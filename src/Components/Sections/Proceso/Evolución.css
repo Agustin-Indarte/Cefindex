@@ -1,0 +1,208 @@
+/* =============================
+   SECCIÓN GENERAL
+============================= */
+
+.Evolución-Section {
+  min-height: 100vh;
+  background: var(--colorNegro);
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+/* =============================
+   LAYOUT BASE
+============================= */
+
+.evolución-row {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* =============================
+   CONTENEDOR LOTTIE
+============================= */
+
+.evolución-lottie {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  filter: drop-shadow(0 8px 16px rgba(255, 255, 255, 0.35)); /* sombra más sutil */
+}
+
+/* Este es el contenedor REAL que mide el layout */
+.lottie-evolución-wrapper {
+  position: relative;
+   height:50vh;
+    width: 100vw;
+  overflow: visible;  /* deja sobresalir el lottie */
+}
+
+
+/* El lottie ya no define el layout */
+.lottie-evolución {
+  position: absolute;
+  inset: -20% -30%;
+  width: 160%;
+  height: 140%;
+  filter: drop-shadow(0 8px 16px rgba(255, 255, 255, 0.35)); /* sombra más sutil */
+}
+
+/* =============================
+   CONTENIDO
+============================= */
+
+.evolución-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.evolución-title {
+  font-size: clamp(2rem, 10vw, 4rem);
+  margin-bottom: 1rem;
+}
+
+.evolución-text {
+  width: 85%;
+  font-size: clamp(1rem, 3.5vw, 2rem);
+  line-height: 1.7;
+}
+
+/* =============================
+   MOBILE (<= 480px)
+============================= */
+@media (max-width: 480px) {
+  .evolución-row {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1.5rem;
+  }
+
+  .lottie-evolución {
+    inset: -10% -50%;
+    width: 200%;
+    height: 120%;
+    filter: drop-shadow(0 6px 12px rgba(255, 255, 255, 0.3)); /* móvil: más suave */
+  }
+
+  .lottie-evolución-wrapper {
+    height: 30vh;
+    width: 100vw;
+    margin-bottom: 5rem;
+  }
+
+  .evolución-content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .evolución-text {
+    width: 100%;
+  }
+}
+
+/* =============================
+   MOBILE (481px – 767px)
+============================= */
+@media (min-width: 481px) and (max-width: 767px) {
+  .evolución-row {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1.5rem;
+  }
+
+  .lottie-evolución {
+    inset: -10% -50%;
+    width: 200%;
+    height: 120%;
+    filter: drop-shadow(0 6px 12px rgba(255, 255, 255, 0.32)); /* móvil grande: suave */
+  }
+
+  .lottie-evolución-wrapper {
+    height: 30vh;
+    width: 100vw;
+    margin-bottom: 5rem;
+  }
+
+  .evolución-content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .evolución-text {
+    width: 100%;
+  }
+}
+
+/* =============================
+   TABLET (768px – 1024px)
+============================= */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .evolución-row {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1.5rem;
+  }
+
+  .lottie-evolución {
+    inset: -10% -50%;
+    width: 200%;
+    height: 110%;
+    filter: drop-shadow(0 7px 14px rgba(255, 255, 255, 0.33)); /* tablet: sutil */
+  }
+
+  .lottie-evolución-wrapper {
+    height: 40vh;
+    width: 100vw;
+    margin-bottom: 5rem;
+  }
+
+  .evolución-content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .evolución-text {
+    width: 200%;
+  }
+}
+
+/* =============================
+   TABLET GRANDE (1025px – 1280px)
+============================= */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .evolución-row {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1.5rem;
+  }
+
+  .lottie-evolución {
+    inset: -10% -50%;
+    width: 200%;
+    height: 110%;
+    filter: drop-shadow(0 7px 14px rgba(255, 255, 255, 0.34)); /* tablet grande: sutil */
+  }
+
+  .lottie-evolución-wrapper {
+    height: 40vh;
+    width: 100vw;
+    margin-bottom: 5rem;
+  }
+
+  .evolución-content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .evolución-text {
+    width: 200%;
+  }
+}

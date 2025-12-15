@@ -13,7 +13,7 @@ function Desarrollo() {
           <div className="lottie-desarrollo-wrapper">
             <DotLottieReact
               className="lottie-desarrollo"
-         src="https://lottie.host/861f0347-6f7b-4245-b97f-57d665032da9/TFGMthgQvR.lottie"
+         src="https://lottie.host/c0d6af31-3268-4b97-9ca3-0255cdfef0d0/8MNiyntyT6.lottie"
               loop
               autoplay
             />

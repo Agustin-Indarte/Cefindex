@@ -1,5 +1,5 @@
-import {useEffect} from 'react'
-import { Análisis, Banner, Desarrollo, Hero, Service } from '../../Components'
+import { useEffect } from 'react'
+import { Análisis, Banner, Desarrollo, Evolución, Hero, Service } from '../../Components'
 import 'aos/dist/aos.css'
 import AOS from 'aos'
 
@@ -16,8 +16,11 @@ function Home() {
       <Hero />
       <Service />
       <Banner />
+
       <Análisis />
       <Desarrollo />
+      <Evolución />
+
     </div>
   )
 }

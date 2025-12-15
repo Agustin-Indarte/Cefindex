@@ -34,7 +34,7 @@
 /* Este es el contenedor REAL que mide el layout */
 .lottie-desarrollo-wrapper {
   position: relative;
-   height:50vh;
+   height:70vh;
     width: 100vw;
   overflow: visible;  /* deja sobresalir el lottie */
 }
@@ -43,8 +43,8 @@
 /* El lottie ya no define el layout */
 .lottie-desarrollo {
   position: absolute;
-  inset: -20% -30%;
-  width: 160%;
+  inset: -20% -55%;
+  width: 210%;
   height: 140%;
   filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.55)); /* sombra negra */
 }
@@ -68,7 +68,7 @@
 .desarrollo-text {
   width: 85%;
   font-size: clamp(1rem, 3.5vw, 2rem);
-  line-height: 2;
+  line-height: 1.7;
 }
 
 /* =============================
@@ -76,6 +76,7 @@
 ============================= */
 @media (max-width: 480px) {
   .desarrollo-row {
+     background-color: red;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -83,9 +84,9 @@
   }
 
   .lottie-desarrollo {
-    inset: -10% -50%;
-    width: 200%;
-    height: 120%;
+    inset: -20% -70%;
+    width: 240%;
+    height: 160%;
     filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.5));
   }
 
@@ -117,14 +118,14 @@
   }
 
   .lottie-desarrollo {
-    inset: -10% -50%;
-    width: 200%;
-    height: 120%;
+    inset: -30% -70%;
+    width: 240%;
+    height: 150%;
     filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.5));
   }
 
   .lottie-desarrollo-wrapper {
-    height: 30vh;
+    height: 40vh;
     width: 100vw;
     margin-bottom: 5rem;
   }
@@ -151,9 +152,9 @@
   }
 
   .lottie-desarrollo {
-    inset: -10% -50%;
-    width: 200%;
-    height: 110%;
+    inset: -20% -60%;
+    width: 220%;
+    height: 140%;
     filter: drop-shadow(0 14px 28px rgba(0, 0, 0, 0.5));
   }
 
@@ -178,6 +179,7 @@
 ============================= */
 @media (min-width: 1025px) and (max-width: 1280px) {
   .desarrollo-row {
+    
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -185,16 +187,16 @@
   }
 
   .lottie-desarrollo {
-    inset: -10% -50%;
-    width: 200%;
-    height: 110%;
+    inset: -20% -70%;
+    width: 250%;
+    height: 130%;
     filter: drop-shadow(0 14px 28px rgba(0, 0, 0, 0.5));
   }
 
   .lottie-desarrollo-wrapper {
-    height: 40vh;
+    height: 50vh;
     width: 100vw;
-    margin-bottom: 5rem;
+    margin-bottom: 1rem;
   }
 
   .desarrollo-content {
