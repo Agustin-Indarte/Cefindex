@@ -27,7 +27,7 @@ function Análisis() {
               ANÁLISIS
             </h3>
 
-            <p className="analisis-text text-white">
+            <p className="analisis-text">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Quisquam nam quasi beatae. Magnam molestias voluptatibus nemo,
               cumque magni et commodi earum eligendi accusamus.

@@ -10,13 +10,12 @@
 
 .Title-Section {
     font-size: clamp(2rem, 10vw, 3rem);
-    color: var(--colorCefindex);
     font-weight: bolder;
+     text-shadow: 0 0 8px rgba(255, 255, 255, 0.7), 0 0 15px rgba(255, 255, 255, 0.4);
 }
 
 .Description-Section {
     font-size: clamp(1rem, 10vw, 1.5rem);
-    color: var(--colorGris);
-   /*  text-shadow: 0 0 8px rgba(255, 255, 255, 0.7), 0 0 15px rgba(255, 255, 255, 0.4); */
+    color: rgba(228, 228, 228, 0.788);
 }
 
