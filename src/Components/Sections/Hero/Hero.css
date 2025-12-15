@@ -8,7 +8,7 @@
 .Title-Page {
     font-size: clamp(2rem, 18vw, 10rem);
     animation: floatTitle 4s ease-in-out infinite;
-     text-shadow: 0 0 50px rgba(183, 0, 255, 0.568), 0 0 15px rgba(221, 221, 221, 0.603);
+     text-shadow: 0 0 50px rgba(99, 4, 136, 0.568), 0 0 15px rgba(221, 221, 221, 0.603);
 }
 
 .floating {
