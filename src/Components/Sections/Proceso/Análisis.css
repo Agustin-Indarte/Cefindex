@@ -71,29 +71,23 @@
 }
 
 /* =============================
-   MOBILE
+   MOBILE (<= 480px)
 ============================= */
-
-@media (max-width: 767px) {
-
+@media (max-width: 480px) {
   .analisis-row {
     flex-direction: column;
-     align-items: center;
+    align-items: center;
     justify-content: center;
     padding: 2rem 1.5rem;
   }
 
-  
-
   .lottie-analisis {
-    inset: -10% -40%;  /* reduce overflow para evitar tapar texto */
+    inset: -10% -40%;
     width: 190%;
     height: 120%;
-        filter: drop-shadow(0 12px 24px rgba(255, 255, 255, 0.5)); /* sombra ajustada en mobile */
+    filter: drop-shadow(0 12px 24px rgba(255, 255, 255, 0.5));
   }
 
-
-  /* Ajuste del contenedor solo en mobile */
   .lottie-analisis-wrapper {
     height: 40vh;
     width: 100vw;
@@ -103,7 +97,6 @@
   .analisis-content {
     align-items: center;
     text-align: center;
-    
   }
 
   .analisis-text {
@@ -112,28 +105,57 @@
 }
 
 /* =============================
-   TABLET (768px a 1024px)
+   MOBILE (481px – 767px)
 ============================= */
+@media (min-width: 481px) and (max-width: 767px) {
+  .analisis-row {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1.5rem;
+  }
 
+  .lottie-analisis {
+    inset: -10% -40%;
+    width: 190%;
+    height: 120%;
+    filter: drop-shadow(0 12px 24px rgba(255, 255, 255, 0.5));
+  }
+
+  .lottie-analisis-wrapper {
+    height: 40vh;
+    width: 100vw;
+    margin-bottom: 3rem;
+  }
+
+  .analisis-content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .analisis-text {
+    width: 100%;
+  }
+}
+
+/* =============================
+   TABLET (768px – 1024px)
+============================= */
 @media (min-width: 768px) and (max-width: 1024px) {
- .analisis-row {
+  .analisis-row {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 2rem 1.5rem;
   }
 
-  
-
   .lottie-analisis {
-    inset: -10% -30%;  /* reduce overflow para evitar tapar texto */
+    inset: -10% -30%;
     width: 150%;
     height: 120%;
-    filter: drop-shadow(0 14px 28px rgba(0, 0, 0, 0.5)); /* sombra ajustada en tablet */
+    filter: drop-shadow(0 14px 28px rgba(255, 255, 255, 0.5));
   }
 
-
-  /* Ajuste del contenedor solo en mobile */
   .lottie-analisis-wrapper {
     height: 40vh;
     width: 100vw;
@@ -143,7 +165,40 @@
   .analisis-content {
     align-items: center;
     text-align: center;
-    
+  }
+
+  .analisis-text {
+    width: 200%;
+  }
+}
+
+/* =============================
+   TABLET GRANDE (1025px – 1280px)
+============================= */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .analisis-row {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1.5rem;
+  }
+
+  .lottie-analisis {
+    inset: -10% -30%;
+    width: 150%;
+    height: 120%;
+    filter: drop-shadow(0 14px 28px rgba(255, 255, 255, 0.5));
+  }
+
+  .lottie-analisis-wrapper {
+    height: 40vh;
+    width: 100vw;
+    margin-bottom: 5rem;
+  }
+
+  .analisis-content {
+    align-items: center;
+    text-align: center;
   }
 
   .analisis-text {
